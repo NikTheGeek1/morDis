@@ -1,0 +1,2443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/morDis.css">
+
+  </head>
+    <input type="hidden" id="questionnaires_order" value="<%= quests %>" >
+      <body>
+
+        <!-- Ethics -->
+        <div id="ethics-div" class="scale">
+          <div id="wrapper">
+
+              <div id="information">
+                <h1 align="center">
+                  Università degli Studi Suor Orsola Benincasa<br>
+                  The University of Edinburgh</h1>
+                <div class="frame">
+                  <h2>Information for participants</h2>
+                  <div class="scroll_text" id="consent-info">
+                    <p><b>Nature of the study.&nbsp;</b>You are about to participate
+                      in an online survey in which you will asked to fill a number of
+                      questionnaires (<b id="QuestNum"></b>). This study is on
+                      the interplay of political orientation, morality and
+                      cognitive dissonance. </p>
+
+                    <p><b>Risks and benefits.&nbsp;</b>There are no known risks to participation in this study.</p>
+
+                    <p><b>Confidentiality and use of data.&nbsp;</b>All the information
+                      we collect during the course of the research will be processed
+                      in accordance with Data Protection Law. In order to safeguard your
+                      privacy, we will never share personal information (like names or dates of birth)
+                      with anyone outside the research team. Your data will be
+                      referred to by a unique participant number rather than by name.
+                      The anonymized data collected during this study will be
+                      used for research purposes. With your permission, identifiable
+                      data such as recordings may also be used for research or teaching purposes,
+                      and may be shared with other researchers or with the general public (e.g., we may make it available through
+                      the world wide web, or use it in TV or radio broadcasts).</p>
+
+                    <p><b>What are my data protection rights?&nbsp;</b>The
+                      University of Edinburgh is a Data Controller for the information you provide.
+                      You have the right to access information held about you.
+                      Your right of access can be exercised in accordance with
+                      Data Protection Law. You also have other rights including rights
+                      of correction, erasure and objection.  For more details,
+                      including the right to lodge a complaint with the Information
+                      Commissioner’s Office, please visit <a href="www.ico.org.uk">www.ico.org.uk</a>.
+                      Questions, comments and requests about your personal data
+                      can also be sent to the University Data Protection Officer
+                      at <a href="mailto:dpo@ed.ac.uk">dpo@ed.ac.uk</a>.</p>
+
+                    <p><b>Voluntary participation and right to withdraw.&nbsp;</b>
+                      Your participation is voluntary, and you may withdraw from
+                      the study at any time and for any reason. If you withdraw
+                      from the study during or after data gathering, we will delete
+                      your data and there is no penalty or loss of benefits to
+                      which you are otherwise entitled.</p>
+
+                    <p>If you have any questions about what you’ve just read,
+                      please feel free to ask, or contact us later. You can contact
+                      us by email at <a href="mailto:nik.theodoropoulos@ed.ac.uk">nik.theodoropoulos@ed.ac.uk</a>.
+                      This project has been approved by PPLS Ethics committee.
+                      If you have questions or comments regarding your own or
+                      your child’s rights as a participant, they can be contacted
+                      at +44 131 650 4020 or <a href="mailto:ppls.ethics@ed.ac.uk">ppls.ethics@ed.ac.uk</a>.</p>
+                    <p>By pressing I agree, you consent to the following:</p>
+                    <ol>
+                      <li><b>I agree to participate in this study.</b></li>
+                      <li>I confirm that I am at least <b>18 years</b> old or older. </li>
+                      <li>I confirm that I have read and understood <b>how my data will be stored and used</b>.</li>
+                      <li>I understand that I have the right to <b>terminate this session</b> at any point. </li>
+                    </ol>
+                    <div class="button-div">
+                      <button type="button" id="button-ethics" >I want to participate</button>
+                  </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- questionnaires -->
+
+        <div id="questionnaires-div" class="section">
+
+          <!-- rwa questionnaire -->
+          <div id="q0_div" class="scale" style="display:none">
+            <div id="wrapper">
+              <div class="instructions">
+                <h2>Change this one rwa</h2>
+              </div>
+
+
+              <form id="form0">
+
+                <!-- Question 1 -->
+                <h3>1. Il nostro Paese ha disperatamente bisogno di un leader energico che spazzi via gli stili di vita radicali e peccaminosi che rischiano di rovinarci. </h3>
+                <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+                <!-- The value is which answer the choice corresponds to. -->
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q1" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 2 -->
+                <h3>2. Gli omosessuali e le lesbiche sono sani e morali quanto gli eterosessuali. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q2" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q2" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q2" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q2" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 3 -->
+                <h3>3. Non c’è assolutamente niente di male nell’esistenza dei campi per nudisti. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q3" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q3" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q3" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q3" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 4 -->
+                <h3>4. I valori e i modi di essere all’antica sono sempre i migliori per vivere. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q4" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q4" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q4" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q4" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+
+                <!-- Question 5 -->
+                <h3>5. Bisogna ammirare chi ha sfidato la legge e la maggioranza combattendo per il diritto all’aborto, i diritti degli animali e per abolire la preghiera a scuola</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q5" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q5" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q5" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q5" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 6 -->
+                <h3>6. Il nostro Paese ha soprattutto bisogno di un leader forte e determinato che spazzi via il male e ci riporti sulla retta via. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q6" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q6" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q6" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q6" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 7 -->
+                <h3>7.Prima che sia troppo tardi bisogna tornare a seguire i precetti religiosi sull’aborto, la pornografia ed il matrimonio e punire chi non li segue</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q7" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q7" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q7" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q7" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 8 -->
+                <h3>8. Il nostro Paese migliorerà quando impareremo a rispettare le tradizioni e le autorità, e quando ci libereremo delle “mele marce” che ci stanno rovinando. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q8" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q8" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q8" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q8" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 9 -->
+                <h3>9. Non c’è un solo modo giusto di vivere: tutti devono costruirsi il proprio. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q9" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q9" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q9" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q9" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 10 -->
+                <h3>10. Il nostro Paese funzionerebbe molto meglio se molti gruppi di sobillatori finalmente tacessero ed accettassero di stare al posto che loro compete. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q10" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q10" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q10" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q10" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 11 -->
+                <h3>11. Il nostro Paese ha soprattutto bisogno cittadini disciplinati che seguano i leader nazionali. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q11" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q11" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q11" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q11" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 12 -->
+                <h3>12. L’aumento dei reati sessuali e degli altri crimini dimostra che bisogna reprimere più duramente i comportamenti immorali se vogliamo salvare il nostro ordine sociale.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q12" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q12" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q12" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q12" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 13 -->
+                <h3>13. La situazione nel nostro Paese sta diventando così preoccupante da giustificare le maniere forti per eliminare i sobillatori e riportarci sulla retta via. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q13" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q13" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q13" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q13" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 14 -->
+                <h3>14. E’ molto positivo che oggi i giovani abbiano la libertà di protestare contro ciò che non condividono, e che si costruiscano le proprie regole di comportamento. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q14" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q14" value=2>
+                    <label>Abbastanza in disaccordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q14" value=3>
+                    <label>Abbastanza d’accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q14" value=4>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+
+                <div class="button-div">
+                  <button type="button" id="button0">Submit Your Answers</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- sdo questionnaire -->
+          <div id="q1_div" class="scale" style="display:none">
+            <div id="wrapper">
+              <div class="instructions">
+                <h2>Change this sdo</h2>
+              </div>
+
+
+              <form id="form1">
+                <!-- Question 1 -->
+                <h3>1. Alcune persone sono più meritevoli di altre. </h3>
+                <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+                <!-- The value is which answer the choice corresponds to. -->
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q1" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 2 -->
+                <h3>2. Questo Paese sarebbe più ricco se ci preoccupassimo meno della questione dell’uguaglianza.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q2" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q2" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q2" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q2" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q2" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 3 -->
+                <h3>3. Alcune persone sono semplicemente più degne di altre.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q3" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q3" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q3" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q3" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q3" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 4 -->
+                <h3>4. Non è un problema se nella vita alcune persone hanno più opportunità di altre.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q4" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q4" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q4" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q4" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q4" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+
+                <!-- Question 5 -->
+                <h3>5. Alcune persone sono semplicemente inferiori ad altre.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q5" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q5" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q5" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q5" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q5" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 6 -->
+                <h3>6. Per andare avanti nella vita qualche volta è necessario passare sopra gli altri.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q6" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q6" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q6" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q6" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q6" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 7 -->
+                <h3>7. Aumentare l’uguaglianza sociale migliorerebbe la vita di questo Paese. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q7" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q7" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q7" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q7" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q7" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 8 -->
+                <h3>8. Avremmo meno problemi se trattassimo con maggiore equità i gruppi diversi dal nostro.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q8" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q8" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q8" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q8" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q8" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 9 -->
+                <h3>9. Tutti gli esseri umani dovrebbero essere trattati alla stessa maniera. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q9" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q9" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q9" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q9" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q9" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 10 -->
+                <h3>10. A tutti i gruppi dovrebbero essere date uguali opportunità nella vita. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q10" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q10" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q10" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q10" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q10" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 11 -->
+                <h3>11. È una cosa positiva che certi gruppi stiano in alto ed altri in basso.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q11" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q11" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q11" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q11" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q11" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 12 -->
+                <h3>12. Alcuni gruppi di persone sono semplicemente inferiori rispetto ad altri gruppi.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q12" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q12" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q12" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q12" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q12" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 13 -->
+                <h3>13. Dovremmo fare il possibile per rendere uguali le condizioni di tutti i gruppi.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q13" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q13" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q13" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q13" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q13" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 14 -->
+                <h3>14. L’uguaglianza fra i gruppi dovrebbe essere il nostro ideale.</h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q14" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q14" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q14" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q14" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q14" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 15 -->
+                <h3>15. I gruppi inferiori dovrebbero restare al loro posto. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q15" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q15" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q15" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q15" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q15" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+                <!-- Question 16 -->
+                <h3>16. È giusto che nella vita alcuni gruppi abbiano più opportunità di altri. </h3>
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q16" value=1>
+                    <label>Per nulla d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q16" value=2>
+                    <label>Poco d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q16" value=3>
+                    <label>Mediamente d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q16" value=4>
+                    <label>Molto d'accordo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q16" value=5>
+                    <label>Del tutto d'accordo</label>
+                  </li>
+                </ul>
+
+
+                <div class="button-div">
+                  <button type="button" id="button1">Submit Your Answers</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Political Orientation -->
+          <div id="q2_div" class="scale" style="display:none">
+            <div id="wrapper">
+              <div class="instructions">
+                <h2>Valuta il tuo orientamento politico.</h2>
+              </div>
+
+
+              <form id="form2">
+
+                <!-- Question 1 -->
+                <h3> </h3>
+                <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+                <!-- The value is which answer the choice corresponds to. -->
+                <ul class='likert'>
+                  <li>
+                    <input type="radio" name="q1" value=1>
+                    <label>Molto conservatore</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=2>
+                    <label>Conservatore</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=3>
+                    <label>Moderatamente conservatore</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=4>
+                    <label>Neutra/o</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=5>
+                    <label>Moderatamente liberale</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=6>
+                    <label>Liberale</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="q1" value=7>
+                    <label>Molto liberale</label>
+                  </li>
+                </ul>
+
+
+
+                <div class="button-div">
+                  <button type="button" id="button2">Submit Your Answers</button>
+                </div>
+              </form>
+          </div
+
+
+
+          >
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </div>
+
+        <!-- Moral disengagement questionnaire -->
+        <div id="q3_div" class="scale" style="display:none">
+          <div id="wrapper">
+            <div class="instructions">
+              <h2>Ti chiediamo ora di esprimere il tuo parere su VARI ASPETTI DELLA VITA
+                LAVORATIVA indicando il tuo grado di accordo con le affermazioni riportate
+                di seguito. Leggi attentamente ogni affermazione e indica il numero che
+                esprime meglio il tuo parere:</h2>
+            </div>
+
+
+            <form id="form3">
+              <!-- Question 1 -->
+              <h3>1. Danneggiare le cose dell'azienda non è molto grave se si pensa a quante cose illegali commettono i dirigenti</h3>
+              <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+              <!-- The value is which answer the choice corresponds to. -->
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q1" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q1" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q1" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q1" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q1" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 2 -->
+              <h3>2. Se dall’azienda sparisce ogni giorno molto materiale non è colpa di chi lo sottrae ma dell’azienda che non adotta nessuna misura preventiva</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q2" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q2" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q2" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q2" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q2" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 3 -->
+              <h3>3. Trascrivere in cartella parametri vitali non veritieri (perché di fatto non rilevati) non è poi così grave se il paziente oggettivamente sta bene</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q3" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 4 -->
+              <h3>4. La mancata somministrazione di una terapia farmacologica non è grave se non danneggia il paziente</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q4" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q4" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q4" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q4" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q4" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+
+              <!-- Question 5 -->
+              <h3>5. Non c’è nulla di male nel tenere disordinata o sporca la propria unità operativa quando lo fanno tanti colleghi</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q5" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q5" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q5" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q5" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q5" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 6 -->
+              <h3>6. Non si può incolpare un infermiere se non somministra le terapie in tempi adeguati, vista la scarsità del personale infermieristico negli ospedali</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q6" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q6" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q6" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q6" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q6" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 7 -->
+              <h3>7. I pazienti che disturbano eccessivamente meritano l’utilizzo inappropriato dei mezzi di contenzione</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q7" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q7" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q7" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q7" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q7" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 8 -->
+              <h3>8. Non è così grave smaltire rifiuti sanitari in modo inadeguato se a livello aziendale non c’è la giusta attenzione rispetto al tema dello smaltimento dei rifiuti</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q8" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q8" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q8" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q8" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q8" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 9 -->
+              <h3>9. Rinviare una prestazione sanitaria al turno successivo non è così grave, visto che tutti lo fanno</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q9" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q9" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q9" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q9" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q9" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 10 -->
+              <h3>10. Aggiornare i parametri vitali di un paziente senza misurarli ogni volta è solo un modo per snellire il lavoro</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q10" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q10" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q10" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q10" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q10" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 11 -->
+              <h3>11. Somministrare a un paziente un dosaggio maggiore di quello prescritto è solo un modo per aiutarlo a stare meglio più in fretta</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q11" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q11" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q11" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q11" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q11" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 12 -->
+              <h3>12. È giusto staccare il sensore di chiamata dei pazienti durante il turno di notte se questo garantisce la tranquillità del reparto</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q12" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q12" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q12" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q12" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q12" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 13 -->
+              <h3>13. Non si può incolpare un infermiere se somministra una terapia diversa da quella prescritta se il farmaco non è disponibile in reparto</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q13" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q13" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q13" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q13" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q13" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 14 -->
+              <h3>14. Se ci sono tante cose da fare, non è poi così grave rispondere male ad un paziente che insistentemente chiede aiuto</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q14" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q14" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q14" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q14" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q14" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 15 -->
+              <h3>15. La mancata somministrazione di una terapia farmacologica è semplicemente una “svista”/ “dimenticanza”</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q15" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q15" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q15" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q15" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q15" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 16 -->
+              <h3>16. Un dipendente non può essere incolpato se spreca materiale sanitario, se l’azienda non fa nulla per controllare</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q16" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q16" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q16" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q16" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q16" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 17 -->
+              <h3>17. Somministrare un farmaco scaduto o non conservato correttamente, non è poi così grave visto che gli altri lo fanno</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q17" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 18 -->
+              <h3>18. Non è grave non eseguire una prestazione assistenziale dal momento che lo farà il collega del turno successivo</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q18" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 19 -->
+              <h3>19. I pazienti che disturbano eccessivamente meritano la somministrazione eccessiva di farmaci (es. ansiolitici)</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q19" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 20 -->
+              <h3>20. Un dipendente che si fa timbrare il cartellino da un collega per uscire a sbrigare necessità personali non è da biasimare, se anche tutti i suoi colleghi lo fanno</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q20" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 21 -->
+              <h3>21. Se un infermiere non somministra una terapia in tempi adeguati la colpa è del caposala che non ha saputo organizzare i turni di lavoro</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q21" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 22 -->
+              <h3>22. Se durante il turno di notte c’è la possibilità di andare a riposarsi, non è così grave visto che i medici e gli altri lo fanno</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q22" value=1>
+                  <label>Per nulla d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=2>
+                  <label>Poco d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=3>
+                  <label>Mediamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=4>
+                  <label>Molto d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=5>
+                  <label>Del tutto d'accordo</label>
+                </li>
+              </ul>
+              <div class="button-div">
+                <button type="button" id="button3">Submit Your Answers</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- Moral foundations questionnaire -->
+        <div id="q4_div" class="scale" style="display:none">
+          <div id="wrapper">
+
+            <form id="form4">
+              <div id="mfq-p1">
+              <div class="instructions">
+                <h2>Parte 1. Quando devi decidere se una cosa è giusta o sbagliata,
+                   quanto sono rilevanti per te le seguenti considerazioni?
+                 </h2>
+              </div>
+              <!-- Question 1 -->
+              <h3>1. Se qualcuno ha sofferto emotivamente oppure no</h3>
+              <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+              <!-- The value is which answer the choice corresponds to. -->
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q1" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q1" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q1" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q1" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q1" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 2 -->
+              <h3>2. Se alcune persone sono state trattate in modo differente da altre oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q2" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q2" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q2" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q2" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q2" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 3 -->
+              <h3>3. Se gli atti compiuti hanno mostrato amore per il proprio Paese oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q3" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 4 -->
+              <h3>4. Se qualcuno ha mostrato una mancanza di rispetto per l’autorità oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q4" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q4" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q4" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q4" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q4" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 5 -->
+              <h3>5. Se qualcuno ha violato le norme di purezza e decenza oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q5" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q5" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q5" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q5" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q5" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 6 -->
+              <h3>6. Se qualcuno è stato bravo in matematica oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q6" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q6" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q6" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q6" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q6" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 7 -->
+              <h3>7. Se qualcuno si è preso cura di una persona debole o vulnerabile oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q3" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q3" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 8 -->
+              <h3>8. Se qualcuno ha agito in modo ingiusto oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q8" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q8" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q8" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q8" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q8" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 9 -->
+              <h3>9. Se qualcuno ha fatto qualcosa per tradire il proprio gruppo oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q9" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q9" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q9" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q9" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q9" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 10 -->
+              <h3>10. Se qualcuno si è adeguato alle tradizioni della società oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q10" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q10" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q10" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q10" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q10" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 11 -->
+              <h3>11. Se qualcuno ha fatto qualcosa di ripugnante oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q11" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q11" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q11" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q11" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q11" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 12 -->
+              <h3>12. Se qualcuno è stato crudele oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q12" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q12" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q12" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q12" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q12" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 13 -->
+              <h3>13. Se a qualcuno sono stati negati i propri diritti oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q13" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q13" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q13" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q13" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q13" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 14 -->
+              <h3>14. Se qualcuno ha dimostrato mancanza di lealtà oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q14" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q14" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q14" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q14" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q14" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 15 -->
+              <h3>15. Se un’azione ha causato caos o disordine oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q15" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q15" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q15" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q15" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q15" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+
+              <!-- Question 16 -->
+              <h3>16. Se qualcuno ha agito in un modo che Dio approverebbe oppure no</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q16" value=1>
+                  <label>Per nulla rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q16" value=2>
+                  <label>Non molto rilevante </label>
+                </li>
+                <li>
+                  <input type="radio" name="q16" value=3>
+                  <label>Lievemente rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q16" value=4>
+                  <label>Un po’ rilevante</label>
+                </li>
+                <li>
+                  <input type="radio" name="q16" value=5>
+                  <label>Molto rilevante</label>
+                </li>
+              </ul>
+            </div> <!-- Closing of mfq-p1-->
+            <div id="mfq-p2">
+              <div class="instructions">
+                <h2>Parte 2. Per favore leggi le seguenti affermazioni ed indica il tuo grado di accordo o disaccordo:</h2>
+              </div>
+              <!-- Question 17 -->
+              <h3>17. La compassione per coloro che soffrono è la virtù più importante</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q17" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q17" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 18 -->
+              <h3>18. Quando il legislatore fa le leggi, il principio fondamentale dovrebbe essere quello di assicurare che tutti vengano trattati in modo equo</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q18" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q18" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 19 -->
+              <h3>19. Sono orgoglioso della storia del mio Paese</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q19" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q19" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 20 -->
+              <h3>20. Il rispetto per l’autorità è una cosa che tutti i bambini devono imparare</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q20" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q20" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 21 -->
+              <h3>21. Le persone non dovrebbero fare cose ripugnanti, anche se nessuno ne viene danneggiato</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q21" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q21" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 22 -->
+              <h3>22. E’ meglio fare del bene che fare del male</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q22" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q22" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 23 -->
+              <h3>23. Una delle peggiori cose che una persona potrebbe fare è far del male ad un animale indifeso</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q23" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q23" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q23" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q23" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q23" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q23" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 24 -->
+              <h3>24. La giustizia è il requisito più importante per una società</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q24" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q24" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q24" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q24" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q24" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q24" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 25 -->
+              <h3>25. Le persone dovrebbero essere leali verso i membri della propria famiglia, anche se questi hanno fatto qualcosa di sbagliato</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q25" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q25" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q25" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q25" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q25" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q25" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 26 -->
+              <h3>26. Uomini e donne hanno ciascuno ruoli diversi nella società</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q26" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q26" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q26" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q26" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q26" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q26" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 27 -->
+              <h3>27. Definirei alcune azioni come sbagliate sulla base del fatto che sono innaturali</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q27" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q27" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q27" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q27" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q27" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q27" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 28 -->
+              <h3>28. Non può mai essere giusto uccidere un essere umano</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q28" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q28" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q28" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q28" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q28" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q28" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 29 -->
+              <h3>29. Penso che sia moralmente sbagliato che i figli dei ricchi ereditino molti soldi mentre i figli dei poveri non ereditano nulla</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q29" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q29" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q29" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q29" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q29" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q29" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 30 -->
+              <h3>30. E’ più importante fare gioco di squadra piuttosto che esprimere se stessi individualmente</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q30" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q30" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q30" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q30" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q30" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q30" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 31 -->
+              <h3>31. Se fossi un soldato e non fossi d’accordo con gli ordini del mio comandante, obbedirei comunque poiché è mio dovere farlo</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q31" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q31" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q31" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q31" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q31" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q31" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+
+              <!-- Question 32 -->
+              <h3>32. La castità è una virtù importante e di valore.</h3>
+              <ul class='likert'>
+                <li>
+                  <input type="radio" name="q32" value=1>
+                  <label>Fortemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q32" value=2>
+                  <label>Moderatamente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q32" value=3>
+                  <label>Lievemente in disaccordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q32" value=4>
+                  <label>Lievemente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q32" value=5>
+                  <label>Moderatamente d'accordo</label>
+                </li>
+                <li>
+                  <input type="radio" name="q32" value=6>
+                  <label>Fortemente d'accordo</label>
+                </li>
+              </ul>
+            </div> <!-- closing of mfq-p2 -->
+
+              <div class="button-div">
+                <button type="button" id="button4">Submit Your Answers</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Demographics/debrief -->
+      <div id="debrief" class="frame" style="display:none;">
+        <h1>Demographics</h1>
+
+        <p>Thank you for your contributions to science. To continue to the
+        questionnaires please answer the following questions: </p>
+
+        <div class="instructions well">
+
+            <form id="postquiz" action="debrief">
+                <p><b>1.</b> How old are you?:
+                  <input id="ageinput" class="posttestQ" type="number" maxlength = "3" name="age" id="age" min="18" max="100" step = "1"> years
+                </p>
+
+                <p><b>2.</b> What is your gender?
+                <select id="sex" name="sex" class="posttestQ">
+                   <option value="noresp" SELECTED></option>
+                   <option value="female">Female</option>
+                   <option value="male">Male</option>
+                   <option value="other">Other</option>
+                   <option value="noresponse">I’d prefer not to respond</option>
+                 </select>
+                </p>
+                <br/>
+
+                <!-- beginning of a question -->
+                <div class="row question">
+                    <div class="col-md-8">
+                        <b>3.</b> On a scale of 1-5 (where 1 is not at all and 5 is a lot),
+                        please rate how focused you were during the survey:
+                    </div>
+                    <div class="col-md-4">
+                        <select id="focus_question" name="pol_orientation" class="posttestQ">
+                            <option value="--" SELECTED>
+                            <option value="5">5 - Very focused </option>
+                            <option value="4">4 - Quite focued </option>
+                            <option value="3">3 - Focued </option>
+                            <option value="2">2 - Slightly focused</option>
+                            <option value="1">1 - Not focused at all</option>
+                        </select>
+                    </div>
+                  </div>
+                  <!-- end of a question -->
+                    <!-- beginning of a question -->
+                    <div class="row question">
+                        <div class="col-md-8">
+                            <b>4.</b> On a scale of 1-7 (where 1 is very liberal and 7 is very conservative), please rate your political orientation:
+                        </div>
+                        <div class="col-md-4">
+                            <select id="pol_orientation" name="pol_orientation" class="posttestQ">
+                                <option value="--" SELECTED>
+                                <option value="7">7 - Very conservative (right-wing)</option>
+                                <option value="6">6 - Conservative (right-wing)</option>
+                                <option value="5">5 - Moderately conservative (right-wing)</option>
+                                <option value="4">4 - Neutral</option>
+                                <option value="3">3 - Moderately liberal (left-wing)</option>
+                                <option value="2">2 - Liberal (left-wing)</option>
+                                <option value="1">1 - Very liberal (left-wing)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- end of a question -->
+            </form>
+            <br>
+
+            <button class="button" id="debrief-button" disabled style="background-color:grey">Finish</button>
+        </div>
+      </div>
+
+
+
+      <!-- Debrief/thank you page -->
+      <div id="thank-u-div" class="section" style="display:none">
+        <h1>Thank you for taking part in our survey :)</h1>
+        <p>If you wish to withdraw your data reach out to
+          <a href="mailto:nik.theodoropoulos@ed.ac.uk">nik.theodoropoulos@ed.ac.uk</a>
+           with this code:
+        <b id="user_id"> PLACEHOLDER </b>
+        </p>
+
+      </div>
+
+
+
+
+
+
+        <script src="/js/task.js"></script>
+        <script src="/js/storeToMongodb.js"></script>
+        <script src="/js/generateToken.js"></script>
+
+      </body>
+
+    </html>
