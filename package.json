@@ -4,7 +4,7 @@
   "description": "Moral disengagement project survey using node express and mongo",
   "main": "index.js",
   "engines":{
-    "node":"12.13.0",,
+    "node":"12.13.0",
     "npm":"6.12.0"
   },
   "scripts": {
