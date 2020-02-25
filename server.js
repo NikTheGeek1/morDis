@@ -41,7 +41,7 @@ container.resolve(function(index, task, q_data){ // brings the modules from the 
       res.render('404');
     });
   }
- 
+
 
   function ConfigureExpress(app){
 
@@ -53,7 +53,6 @@ container.resolve(function(index, task, q_data){ // brings the modules from the 
     app.use(bodyParser.urlencoded({extended: true}));
 
     app.use(session({ // allows to save sessions
-      //secret: 'thisissecret',
       secret: process.env.SECRET_KEY,
       resave: true,
       saveUninitialized: true,
