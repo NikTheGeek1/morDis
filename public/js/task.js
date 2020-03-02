@@ -26,7 +26,7 @@ $(document).ready(function(){
   // ethics button
   $("#button-ethics").on('click', function(){
     $("#ethics-div").hide();
-    $("#"+q_order[0]+"_div").show();
+    $("#q"+q_order[0]+"_div").show();
   });
   // debrief button
   $("#debrief-button").on('click', function(){
