@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var q_order =  [0,1,2,3,4]//$("#questionnaires_order").val().split(",");
+  var q_order =  [0,1,2,3,4]//$("#questionnaires_order").val().split(","); // change this to let participants choose wich questionnaire to complete
   var responses_ojb = {};
   responses_ojb['user_id'] = makeid(7); // making user id
   // enable the debrief button when all questions have been answered
