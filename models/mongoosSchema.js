@@ -2,7 +2,6 @@ const mongoose = require('mongoose'); // requiring the module
 
 const userSchema = mongoose.Schema({ // creating the schema (data structure which will save)
 
-  //username: {type: String, unique: true},
   user_id:{type: String},
   age:{type: String},
   sex:{type: String},

@@ -31,7 +31,7 @@ $(document).ready(function(){
   // debrief button
   $("#debrief-button").on('click', function(){
     // collecting data
-    responses_ojb['age'] = $("#age").val();
+    responses_ojb['age'] = $("#ageinput").val();
     responses_ojb['sex'] = $("#sex").val();
     responses_ojb['focus'] = $("#focus_question").val();
     responses_ojb['political_or'] = $("#pol_orientation").val();
