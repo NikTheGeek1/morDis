@@ -60,8 +60,8 @@ $(document).ready(function(){
             inputNames.push(this.name);
           });
           var counts = {}; // counting the number of unique names
-          for (let i = 0; i < inputNames.length; i++) {
-              counts[inputNames[i]] = 1 + (counts[inputNames[i]] || 0);
+          for (let k = 0; k < inputNames.length; k++) {
+              counts[inputNames[k]] = 1 + (counts[inputNames[k]] || 0);
           }
           // checking if the length of the unique inputs is the same as the given answers
           var isUnanswered = Object.keys(counts).length !== responses.length;
@@ -70,7 +70,7 @@ $(document).ready(function(){
           } else{
             $(window).scrollTop(0); // scrolling to the top
             // stonring data in responses object
-            responses_ojb["q"+i] = responses
+            responses_ojb["q"+q_order[i]] = responses
 
             // which ones we take out when the button is pressed?
             $("#q"+q_order[i]+"_div").hide();
